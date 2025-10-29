@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ai-passivbot:
+    build: .
+    container_name: ai-passivbot
+    environment:
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+    command: python main.py
